@@ -1,0 +1,23 @@
+<h1>helooo</h1>
+<h2> hello{{ name }} i am from {{address}}</h2>
+
+{% if mtime < 12 %}
+    <h4>GOOD MORNING</h4>
+    {% else %}
+    <h4>GOOD AFTERNOON</h4>
+    {% endif %}
+
+    <ul>
+    {% for i in mark %}
+    <li>{{ i }}</li>
+    {% endfor %}
+    </ul>
+
+    <ul>
+        {% for i,j in data.items %}
+        <li>
+            {{ i }} : {{ j }}
+        </li>
+        {% endfor %}
+    </ul>
+
